@@ -122,7 +122,7 @@ class BrentOilPricesEDA:
         # Plot the decomposition
         plt.figure(figsize=(14, 10))
         decomposition.plot()
-        plt.suptitle("Seasonal Decomposition of Brent Oil Prices", fontsize=16)
+        plt.suptitle("Seasonal Decomposition of Brent Oil Prices", fontsize=10)
         plt.show()
 
     def plot_acf_pacf(self, column='Price', lags=30):
