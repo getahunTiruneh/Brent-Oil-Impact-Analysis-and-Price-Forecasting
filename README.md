@@ -36,8 +36,8 @@ pip install numpy
 1. Clone the Repository:
 >>>>
     git clone https://github.com/getahunTiruneh/Brent-Oil-Impact-Analysis-and-Price-Forecasting
-.git`
-
+    .git`
+>>>>
     cd Brent-Oil-Impact-Analysis-and-Price-Forecasting
 >>>>
 
