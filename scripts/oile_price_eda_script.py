@@ -195,7 +195,22 @@ class BrentOilPricesEDA:
         
         logging.info("Histogram plot generated successfully with statistics and colormap.")
 
-    
+    def plot_cusum(self, column_name='Price'):
+        """
+        Calculate and plot the CUSUM values for the specified column.
+        """
+        # Calculate the CUSUM values
+        cusum_values = np.cumsum(self.data[column_name] - self.data[column_name].mean())
+        
+        # Plot the CUSUM values
+        plt.figure(figsize=(14, 7))
+        plt.plot(self.data.index, cusum_values, label='CUSUM', color='blue')
+        plt.axhline(y=0, color='red', linestyle='--')
+        plt.xlabel('Date')
+        plt.ylabel('CUSUM Value')
+        plt.title('CUSUM Analysis')
+        plt.legend()
+        plt.show()
     def change_point_analysis(self):
         """
         Performs change point analysis on the 'Price' data using the ruptures library.
