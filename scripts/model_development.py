@@ -6,7 +6,6 @@ import logging
 from sklearn.metrics import r2_score
 from sklearn.linear_model import LinearRegression
 from statsmodels.tsa.arima_model import ARIMA
-from statsmodels.tsa.arima_model import ARIMA
 # from keras.layers import LSTM
 
 class ModelBuilder:
