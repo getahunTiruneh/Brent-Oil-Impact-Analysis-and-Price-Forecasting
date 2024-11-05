@@ -165,7 +165,7 @@ class BrentOilPricesEDA:
         plt.figure(figsize=(10, 6))
 
         # Generate histogram values
-        hist_values, bins, patches = plt.hist(self.data[column], bins=20, edgecolor='black', alpha=0.7)
+        hist_values, bins, patches = plt.hist(self.data[column], bins=20, edgecolor='black', alpha=0.7, kde=True)
 
         # Apply colormap to each bin
         cmap = plt.get_cmap(cmap)
